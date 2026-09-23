@@ -1,0 +1,163 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+
+  // CIELO
+  background(25, 65, 135);
+
+  // REMOLINOS
+  noFill();
+  strokeWeight(5);
+  stroke(70, 135, 190);
+
+  ellipse(100, 80, 150, 45);
+  ellipse(100, 80, 120, 32);
+  ellipse(100, 80, 85, 20);
+
+  stroke(55, 115, 180);
+  ellipse(205, 105, 145, 50);
+  ellipse(205, 105, 110, 35);
+  ellipse(205, 105, 75, 22);
+
+  stroke(80, 145, 195);
+  ellipse(315, 145, 140, 45);
+  ellipse(315, 145, 105, 30);
+
+  // LÍNEAS DEL MOVIMIENTO
+  stroke(45, 105, 175);
+  strokeWeight(4);
+
+  line(25, 55, 60, 45);
+  line(35, 68, 75, 55);
+
+  line(145, 45, 180, 35);
+  line(155, 58, 195, 45);
+
+  line(245, 55, 280, 40);
+  line(255, 68, 295, 52);
+
+  line(330, 90, 375, 75);
+  line(340, 103, 390, 87);
+
+  // ESTRELLAS
+  fill(250, 195, 45);
+  stroke(225, 155, 25);
+  strokeWeight(3);
+
+  ellipse(55, 55, 25, 25);
+  ellipse(145, 110, 20, 20);
+  ellipse(215, 50, 28, 28);
+  ellipse(290, 95, 23, 23);
+  ellipse(355, 145, 25, 25);
+  ellipse(120, 155, 18, 18);
+
+  //Agregar 3 Estrellasmas 
+  ellipse(110,180,40)
+  
+
+  // BRILLOS
+  stroke(255, 215, 70);
+  line(55, 35, 55, 75);
+  line(35, 55, 75, 55);
+
+  line(215, 28, 215, 72);
+  line(193, 50, 237, 50);
+
+  // LUNA
+  fill(248, 190, 45);
+  stroke(215, 145, 25);
+  strokeWeight(3);
+  ellipse(330, 55, 48, 48);
+
+  // DETALLES DE LA LUNA
+  stroke(225, 160, 35);
+  strokeWeight(2);
+  line(315, 45, 340, 38);
+  line(318, 57, 343, 50);
+  line(325, 68, 347, 61);
+
+  // MONTAÑAS
+  fill(35, 90, 135);
+  stroke(25, 65, 110);
+  strokeWeight(3);
+
+  triangle(0, 230, 75, 175, 145, 230);
+  triangle(100, 230, 185, 160, 270, 230);
+  triangle(215, 230, 305, 175, 400, 230);
+
+  // SEGUNDA CAPA
+  fill(45, 105, 130);
+  triangle(0, 245, 60, 195, 130, 245);
+  triangle(120, 245, 190, 190, 260, 245);
+  triangle(250, 245, 320, 190, 400, 245);
+
+  // PUEBLO
+  fill(105, 75, 65);
+  noStroke();
+
+  rect(20, 235, 35, 30);
+  rect(70, 225, 40, 40);
+  rect(125, 238, 30, 27);
+  rect(175, 230, 38, 35);
+  rect(235, 235, 35, 30);
+  rect(290, 225, 40, 40);
+  rect(345, 230, 35, 35);
+
+  // TECHOS
+  fill(50, 55, 70);
+
+  triangle(15, 235, 37, 215, 60, 235);
+  triangle(65, 225, 90, 205, 115, 225);
+  triangle(120, 238, 140, 220, 160, 238);
+  triangle(170, 230, 194, 210, 218, 230);
+  triangle(230, 235, 252, 215, 275, 235);
+  triangle(285, 225, 310, 203, 335, 225);
+  triangle(340, 230, 362, 210, 385, 230);
+
+  // VENTANAS
+  fill(245, 180, 45);
+
+  rect(32, 242, 7, 9);
+  rect(82, 235, 8, 10);
+  rect(135, 244, 7, 9);
+  rect(185, 240, 8, 10);
+  rect(245, 242, 8, 9);
+  rect(302, 235, 8, 10);
+  rect(355, 240, 8, 10);
+
+  // PASTO
+  strokeWeight(3);
+
+  stroke(35, 105, 60);
+  line(125, 400, 145, 325);
+  line(145, 400, 165, 335);
+  line(165, 400, 190, 315);
+  line(190, 400, 215, 330);
+
+  stroke(60, 135, 65);
+  line(215, 400, 240, 320);
+  line(235, 400, 260, 335);
+  line(260, 400, 285, 315);
+  line(285, 400, 310, 330);
+  line(315, 400, 340, 320);
+  line(345, 400, 370, 335);
+
+  // CIPRÉS
+  fill(15, 45, 45);
+  stroke(10, 35, 35);
+  strokeWeight(3);
+
+  triangle(25, 400, 75, 125, 125, 400);
+
+  // PINCELADAS DEL CIPRÉS
+  stroke(40, 90, 65);
+  strokeWeight(4);
+
+  line(50, 380, 70, 175);
+  line(60, 350, 80, 145);
+  line(70, 390, 90, 185);
+
+
+}
