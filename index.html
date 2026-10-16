@@ -4,8 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graficación | ISC</title>
-    <!-- Enlace corregido a la carpeta css en minúsculas -->
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Reset de estilos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        /* Encabezado azul */
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.6rem;
+        }
+
+        header p {
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
+        /* Contenedor principal */
+        main {
+            max-width: 1200px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Secciones por Unidad */
+        .unidad-seccion {
+            margin-bottom: 3rem;
+        }
+
+        .unidad-seccion h2 {
+            color: #1e3c72;
+            border-bottom: 3px solid #2a5298;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.6rem;
+        }
+
+        /* Cuadrícula de actividades */
+        .grid-actividades {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* Tarjetas de actividades */
+        .tarjeta-actividad {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            border-top: 4px solid #2a5298;
+        }
+
+        .tarjeta-actividad:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .tarjeta-actividad h3 {
+            color: #1e3c72;
+            margin-bottom: 0.8rem;
+            font-size: 1.25rem;
+        }
+
+        .tarjeta-actividad p {
+            color: #555555;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        /* Botones azules */
+        .btn-enlace {
+            display: inline-block;
+            background-color: #2a5298;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.65rem 1.2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-enlace:hover {
+            background-color: #1e3c72;
+        }
+    </style>
 </head>
 <body>
 
