@@ -1,0 +1,125 @@
+// Practica 2.1 - Koalas
+function setup() {
+  createCanvas(800, 250);
+  angleMode(DEGREES);
+  //Configura p5.js para medir los giros en grados en lugar de radianes, lo cual es más fácil de usar. 
+}
+
+function draw() {
+  background(255);
+  //Fondo blanco
+
+  // Etapa 1: Bebe
+  push();
+    translate(80, 120);
+    scale(0.5);
+    rotate(-10);
+    dibujarKoala(1);
+  pop();
+
+  // Etapa 2: Niño
+  push();
+    translate(230, 120);
+    scale(0.75);
+    rotate(5);
+    dibujarKoala(2);
+  pop();
+
+  // Etapa 3: Joven
+  push();
+    translate(380, 120);
+    scale(1.0);
+    rotate(0);
+    dibujarKoala(3);
+  pop();
+
+  // Etapa 4: Adulto
+  push();
+    translate(530, 120);
+    scale(1.15);
+    rotate(-5);
+    dibujarKoala(4);
+  pop();
+
+  // Etapa 5: Anciano
+  push();
+    translate(680, 120);
+    scale(1.25);
+    rotate(8);
+    dibujarKoala(5);
+  pop();
+}
+
+// Función base del koala en el origen (0,0)
+function dibujarKoala(etapa) {
+  stroke(0);
+  strokeWeight(2);
+
+  // Color de piel base
+  let colorPiel = color(180);
+
+  // Cambio de tono según la etapa
+  if (etapa === 1) {
+    colorPiel = color(220); // mas claro
+  } else if (etapa === 5) {
+    colorPiel = color(130); // mas oscuro
+  }
+
+  // Orejas
+  fill(colorPiel);
+  ellipse(-30, -20, 35, 35);
+  ellipse(30, -20, 35, 35);
+  fill(255, 190, 200);
+  ellipse(-30, -20, 20, 20);
+  ellipse(30, -20, 20, 20);
+
+  // Cara
+  fill(colorPiel);
+  ellipse(0, 0, 70, 60);
+
+  // Ojos
+  fill(0);
+  ellipse(-15, -5, 8, 8);
+  ellipse(15, -5, 8, 8);
+
+  // Nariz
+  fill(50);
+  ellipse(0, 8, 16, 24);
+
+  // Detalles de cada etapa
+  if (etapa === 1) {
+    // Chupon
+    fill(255, 100, 100);
+    ellipse(0, 22, 10, 10);
+  } 
+  else if (etapa === 2) {
+    // Gorra
+    fill(50, 120, 220);
+    arc(0, -22, 45, 25, 180, 360);
+  } 
+  else if (etapa === 3) {
+    // Moño
+    fill(220, 50, 50);
+    triangle(0, 25, -12, 20, -12, 30);
+    triangle(0, 25, 12, 20, 12, 30);
+  } 
+  else if (etapa === 4) {
+    // Bigote
+    fill(50);
+    ellipse(-6, 20, 10, 5);
+    ellipse(6, 20, 10, 5);
+  } 
+  else if (etapa === 5) {
+    // Lentes y baston
+    noFill();
+    stroke(0);
+    ellipse(-15, -5, 14, 14);
+    ellipse(15, -5, 14, 14);
+    line(-8, -5, 8, -5);
+
+    // Baston
+    stroke(120, 70, 20);
+    strokeWeight(3);
+    line(40, 10, 40, 45);
+  }
+}
