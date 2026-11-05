@@ -49,6 +49,9 @@ window.addEventListener('resize', () => {
 
 // Bucle de renderizado
 function animate() {
+
+  cajaSemaforo.rotation.y += 0.01;
+
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
 }
