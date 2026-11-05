@@ -51,7 +51,6 @@ window.addEventListener('resize', () => {
 function animate() {
 
   cajaSemaforo.rotation.y += 0.01;
-
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
 }
